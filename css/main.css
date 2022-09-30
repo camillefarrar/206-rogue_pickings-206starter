@@ -1,0 +1,221 @@
+html {
+	font-size: 16px;
+}
+body {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	justify-content: center;
+}
+
+.container {
+	align-items:  center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90%;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.9em;
+}
+h2 {
+	font-size: 1.1em;
+}
+h3 {
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 0.9em;
+	line-height: 21px;
+  padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	align-items: center;
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+header h1 {
+	border-bottom: 3px solid #77a466;
+	margin: 0;
+	padding: 16px 0;
+	text-align: center;
+	width: 100%;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 32px 0;
+}
+header nav ul {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9em;
+	padding: 0 0 24px;
+	display: inline;
+}
+header nav ul li:last-child {
+	padding: 0 !important;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.main-image {
+	height: auto;
+	width: 100%;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+	padding: 10px 0;
+}
+
+.section-two h3,
+.section-three h3 {
+	padding: 10px 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+	padding: 0;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+	padding: 0;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	align-items: center;
+	border-top: 3px solid #eee;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+	.bottom-section {
+		align-items: stretch;
+	}
+	.section-one, .section-two, .section-three {
+		width: 33%;
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	.section-two h3, .section-three h3 {
+		padding: 10px 30px;
+	}
+	.reviews, .address {
+		padding: 0 30px;
+	}
+}
+@media (min-width: 1025px) {
+	header h1 {
+		border-bottom: none;
+		width: auto;
+	}
+	header {
+		justify-content: space-between;
+	}
+	header nav ul {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	header nav ul li {
+		padding: 0 10px;
+	}
+	header nav ul li:last-child {
+		padding: 0 !important;
+	}
+}
